@@ -1,35 +1,54 @@
-# Unreal Engine files to ignore
-*.uasset
-*.umap
-*.fbx
-*.wav
-*.mp4
-*.avi
-*.mov
-*.psd
-*.tga
-*.blend
-*.obj
-*.3ds
-*.max
-
-# Intermediate and Saved folders
+# Unreal Engine project folders to ignore
 Binaries/
 DerivedDataCache/
 Intermediate/
 Saved/
-
-# Build config files
+Build/
 .vs/
 .vscode/
+
+# Compiled project files
+*.dll
+*.exe
+*.pdb
+*.lib
+*.app
+*.dylib
+*.ipch
+*.obj
+*.so
+
+# VS + IDE
 *.sln
 *.suo
 *.user
 *.userosscache
 *.sdf
-*.ipch
 *.opensdf
 *.VC.db
 
-# Git
-.gitattributes
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Crash reports and logs
+*.log
+
+# Ignore local git config
+.git/
+
+# Optional: ignore packed backup files
+*.bak
+*.tmp
+*.old
+*.orig
+
+# Ignore auto-generated folders from packaging
+Automation/
+
+# Don't ignore assets tracked by LFS (they're handled separately)
+# DO NOT include *.uasset, *.umap, *.fbx, etc. here if tracked by Git LFS!
